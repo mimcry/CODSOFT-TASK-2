@@ -1,3 +1,7 @@
+body{
+  background-color: #081b29;
+
+}
 .App {
   text-align: center;
 }
@@ -35,4 +39,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+#typing{
+  position: relative;
+}
+#typing::after{
+  content: "";
+  left: 0%;
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  top:0;
+  background-color: #081b29;
+  border-left: 2px solid white;
+animation: typing 2s steps(10) infinite;
+}
+@keyframes typing {
+  100%{
+    left: 45%;
+    margin: 0 -35px 0  35px;}
 }
